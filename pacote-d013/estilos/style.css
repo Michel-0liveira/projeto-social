@@ -1,25 +1,29 @@
 @charset "UTF-8";
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-html, body {
+html,
+body {
     height: 100vh;
     width: 100vw;
     background-color: black;
 }
-body{
+
+body {
     background-image: url(../imagens/fundo-madeira.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
 }
-main n{
+
+main {
     height: 100vh;
     position: relative;
 }
+
 section#telefone {
     position: absolute;
     top: 50%;
@@ -33,10 +37,27 @@ section#telefone {
 
 }
 
-iframe#home {
+iframe#tela {
     position: relative;
     top: 83px;
     left: 25px;
     height: 461px;
     width: 257px;
+}
+section#redes_sociais {
+    text-align: right;
+}
+section#redes_sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.274);
+    box-sizing: border-box;
+}
+section#redes_sociais img:hover {
+    border: 2px solid white;
+    transform: translate(-3%, -3%);
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.274);
+    transition: transform 0.4s, border 0.3s;
+    
 }
